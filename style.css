@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.box {
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-left-style: dotted; */
+}
+#box-1 {
+  border-left: none;
+  border-top: none;
+}
+#box-2 {
+  /* border-left: none; */
+  border-top: none;
+}
+#box-3 {
+  border-right: none;
+  border-top: none;
+}
+#box-4 {
+  border-left: none;
+  /* border-top: none; */
+}
+
+#box-6 {
+  border-right: none;
+  /* border-top: none; */
+}
+#box-7 {
+  border-left: none;
+  border-bottom: none;
+}
+#box-8 {
+  /* border-left: none; */
+  border-bottom: none;
+}
+#box-9 {
+  border-right: none;
+  border-bottom: none;
+}
+
+.box:hover {
+  background-color: rgb(95, 118, 119);
+}
+.boxtext {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.gameInfo {
+  padding: 0 34px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+.gameInfo h1 {
+  font-size: 2.5rem;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+#reset {
+  margin: 0 23px;
+  padding: 1px 18px;
+  background: #dbd8d0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Baloo Bhaina 2";
+  font-size: 15px;
+  font-weight: bolder;
+}
+#reset:hover {
+  background-color: #9c874d;
+}
+.resetButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+.line {
+  height: 3px;
+  width: 0;
+  position: absolute;
+  background-color: #4575b4;
+  transition: width 1s ease-in-out;
+}
+#block2 {
+  opacity: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* left: 100000000000000000000px; */
+}
+.StartButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 1px solid rgb(139, 108, 108);
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  width: 30px;
+}
+.StartButton:hover {
+  background-color: rgb(115, 110, 182);
+}
+.headingTic {
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+#block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px dashed rgb(56, 36, 36); */
+  padding: 80px;
+  margin-top: 30px;
+}
+.sorrund {
+  border: 1px solid red;
+  padding: 70px;
+  border: 1px dashed rgb(56, 36, 36);
+}

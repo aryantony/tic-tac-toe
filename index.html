@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="block1">
+      <div class="sorrund">
+        <h1 class="headingTic">Tic Toc Toe</h1>
+        <!-- <span class="nameOfPlayer1">Player 1: </span> -->
+        <input
+          type="text"
+          id="NAME1"
+          autocomplete="off"
+          placeholder="Name of Player-1 ?"
+        />
+        <div></div>
+        <!-- <span class="nameOfPlayer1">Player 2: </span> -->
+        <input
+          type="text"
+          id="NAME2"
+          autocomplete="off"
+          placeholder="Name of Player-2 ?"
+        />
+        <div class="StartButton" id="start">Start</div>
+      </div>
+    </div>
+    <div id="block2">
+      <div class="gameContainer">
+        <div class="gameInfo">
+          <div>
+            <h2 class="player1"></h2>
+            <span class="info">Let me Start</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="line"></div>
+          <div class="box" id="box-1"><span class="boxtext"></span></div>
+          <div class="box" id="box-2"><span class="boxtext"></span></div>
+          <div class="box" id="box-3"><span class="boxtext"></span></div>
+          <div class="box" id="box-4"><span class="boxtext"></span></div>
+          <div class="box" id="box-5"><span class="boxtext"></span></div>
+          <div class="box" id="box-6"><span class="boxtext"></span></div>
+          <div class="box" id="box-7"><span class="boxtext"></span></div>
+          <div class="box" id="box-8"><span class="boxtext"></span></div>
+          <div class="box" id="box-9"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameInfo">
+          <div>
+            <h2 class="player2"></h2>
+            <span class="info">Ok</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="resetButton">
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
